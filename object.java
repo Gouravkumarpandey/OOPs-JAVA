@@ -2,22 +2,20 @@ class Student {
     String name;
     int age;
 
-    public  void  printInfo() {
+    public void printInfo() {
         System.out.println(this.name);
         System.out.println(this.age);
     }
 
-    Student( ){
-        System.out.println("Constructor Called");
-
+    Student(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
 }
-class Object{
-    public static void main(String arg[]){
-        Student s1 = new Student();
-        s1.name = "Rohit";
-        s1.age = 22;
 
+public class OOPS {
+    public static void main(String[] args) {
+        Student s1 = new Student("amman", 24);
         s1.printInfo();
     }
 }
