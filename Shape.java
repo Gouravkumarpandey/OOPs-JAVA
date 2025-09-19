@@ -1,3 +1,6 @@
+import java.util.*;
+import bank.*;
+
 class Shape {
     public void area(){
         System.out.println("dispaly area");
@@ -27,7 +30,7 @@ class Circle extends Shape {
 
 public class OOPS {
     public static void main (String arg[]){
-        Triangle t1 = new Triangle ();
-        t1.color = " red";
+      bank.Account account1 = new bank.Account();
+      account1.name =" Customer1";
     }
-}
+} 
